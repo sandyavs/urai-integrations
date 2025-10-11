@@ -31,7 +31,7 @@ async function TeamsTest() {
 			const removedUser = await TeamsAPI.removeTeamUser({ team_id: teams[0].id, team_user_id: 20401 });
 			console.log("REMOVED TEAM USER:", JSON.stringify(removedUser, null, 2));
 
-			const createdBookingType = await TeamsAPI.createTeamBookingTypes({
+			const createdBookingType = await TeamsAPI.createTeamBookingType({
 				team_id: teams[0].id,
 				title: "20 minutes meeting Test",
 				description: "20-minute consultation",
